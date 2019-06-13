@@ -1,0 +1,207 @@
+﻿/* background color */
+body {
+background-color: #006633;
+font-size:12px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* layout of websites */
+div#wrapper {
+width: 780px;
+background-color:#FFFFFF;
+margin-top: 3.125em;
+margin-bottom: 3.125em;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+border: thin solid #000000;
+}
+
+/*header box for top of sites */
+div#header {
+padding: 0.938em;
+margin: 0px;
+text-align: center;
+background-color:#669966;
+color: white;
+}
+
+/* header text at top of site */
+h1 
+{
+    font-size:1.525em;
+    text-align:left;
+}
+
+
+/* navigation menu */
+div#nav {
+display:inline-block;
+float:left;
+line-height:2.5em;
+padding:0.625em;
+width:180px;
+
+}
+
+
+/* navigation menu header */
+h2
+{
+    font-size:1.525em;
+    color:black;
+}
+
+
+/* controls for the header of the content page and the content area */
+div#main {
+margin-top: 0.063em;
+padding: 0.625em;
+margin-bottom: 1em;
+}
+
+
+/* size of text for the content header */
+div#pageheader
+{
+    font-size:2em;
+    color:black;
+}
+
+/* controls content pages */
+div#content
+{
+color:black;
+display:inline-block;
+min-height:400px;
+width:530px;
+margin-left:15px;
+}
+
+/* controls the unordered list on the forms and docs page */
+ul#documents {
+color:black;
+line-height: 20px;
+}
+
+
+/* controls the unordered list on the default.aspx, it will also control any other unordered lists that are not named */
+ul
+{
+    list-style-type:none;
+}
+
+/* controls the ordered list on the boardofdirectors page, it will also control any other ordered lists that are not named */
+ol
+{
+    list-style-type:none;
+    line-height:2.5em;
+}
+
+
+/* board of directors page clock */
+div#clock 
+{
+font-weight:bold;
+left:340px;
+position:relative;
+top:200px;
+width:200px;
+margin-top:-110px;
+}
+
+/* for the underline on board of directors page */
+.meetingnotes
+{
+    text-decoration:underline;
+}
+
+/* controls the footer */
+div#footer {
+padding: 0.938em;
+margin: 0px;
+border-top: thin solid #000000;
+text-align:center;
+}
+
+
+/* horizontal line for the top of pages under the page headers */
+hr 
+{
+   height:0.313em;
+   color:#669900;
+   background-color:#669900; 
+}
+
+/* controls the image and text for the rules and regulation css on the rules and regulations page */
+.vehicleinforr
+{
+    margin-top:15px;
+}
+
+/* controls the image and text for the architectural requests css on the rules and regulations page */
+.archreqsrr
+{
+    margin-top:15px;
+    width: 529px;
+}
+  
+/* horizontal rule  for the rules and regulations page */
+.hrvehicle
+{
+   height:0.113em;
+   color:#669900;
+   background-color:#669900;
+   width:240px; 
+   margin-right:420px;
+}
+
+/* unused block, do not delete
+.rulesblock
+{
+    display:inline-block;
+    width:280px;
+    height:30%;
+}*/
+
+/* bold text for rules and regulations and architectural requests selections in the rules and regulations page */
+h3
+{
+    margin-top:15px;
+    font-weight:bold;
+    font-size:12px;
+}
+
+/* all anchoring link styles listed here for each property of a hyperlink */
+a:link {
+text-decoration: none;
+color:#336633;
+}
+a:visited {
+text-decoration: none;
+color:#336633;
+}
+a:hover {
+text-decoration: underline;
+color: #000066;
+}
+a:active {
+text-decoration: none;
+}
+
+/* footer controls for the various sections of the footer */
+div#footer ul li{
+color : #000000;
+background-color : transparent;
+
+}
+
+div#footer ul li a{
+color : #115EAC;
+background-color : transparent;
+text-decoration : none;
+}
+
+div#footer ul li a:hover{
+text-decoration : underline;
+}

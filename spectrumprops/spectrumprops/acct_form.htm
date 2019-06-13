@@ -1,0 +1,145 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Spectrum Property Management</title>
+<style fprolloverstyle>A:hover {color: #008000; font-weight: bold}
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+</head>
+
+<body background="Images/grad.gif" link="#FFFFFF" vlink="#FFFFFF" alink="#FF0000">
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+      <td width="141" valign="top" align="left"><br>
+						<p></p>
+						<p><font size="2" face="Arial"><b><a href="index.htm">Home</a></b></font></p>
+						<p><b><font face="Arial" size="2" color="#000080"><a href="mission.htm">Mission</a>&nbsp;</font></b></p>
+						<p><font face="Arial" size="2"><a href="mgmt_services.htm"><b>Managment<br> Services</b></a></font></p>
+						<p><font face="Arial" size="2" color="#000080"><a href="finan_services.htm"><b>Financial<br>
+        Services</b></a></font></p>
+						<p><font face="Arial" size="2" color="#000080"><a href="bios.htm"><b>Executive<br>
+        Bios</b></a></font></p>
+        <p><font face="Arial" size="2" color="#000080"><a href="maint_form.htm"><b>Maintenance<br>
+        Request Form</b></a></font></p>
+        <p><font face="Arial" size="2" color="#000080"><b><a href="acct_form.htm">Accounting<br>
+        Request Form</a></b></font></p>
+        <p><font face="Arial" size="2" color="#000080"><a href="contact.htm"><b>Contact Us</b></a></font></p>
+      </td>
+      <td width="455" valign="top">
+						<div align="left">
+							<h2><img border="0" src="Images/title1.gif" alt="Spectrum Property Services" align="middle" width="374" height="119"></h2>
+						</div>
+						<p align="left"></p>
+						<table border="0" cellpadding="0" cellspacing="2" width="400">
+							<tr>
+								<td><img src="Images/feedback.gif" width="74" height="64" border="0"></td>
+								<td>
+									<p align="left"><b><font face="Arial" color="#000080"><span style="text-decoration: none; text-underline: none">Accounting Request </span></font></b><b><font face="Arial" color="#000080"><span style="text-decoration: none; text-underline: none">Form:</span></font></b></p>
+								</td>
+							</tr>
+						</table>
+						<p align="left"><font face="Arial" size="2">Complete </font><font face="Arial" size="2"> and submit this form to register an Accounting Request.</font></p>
+						<form action="emailform.asp?form=acct" method="POST" onSubmit="MM_validateForm('NameOfAssocication','','R','YourName','','R','DayPhone','','R','Description','','R');return document.MM_returnValue">
+          <div align="left">
+            <table border="0" cellpadding="2" width="453">
+              <tr>
+                <td width="191" align="right">
+                  <p align="right"><font color="#FF0000" size="2" face="Arial">*</font><font size="2" face="Arial"></font><font size="2" face="Arial">Name of
+                Association:&nbsp;&nbsp;</font></td>
+                <td width="258"><input type="text" name="NameOfAssocication" size="30"></td>
+              </tr>
+              <tr>
+                <td width="191" align="right">
+                  <p align="right"><font face="Arial" size="2">Association
+                  Address&nbsp;&nbsp;</font></td>
+                <td width="258"><textarea rows="2" name="AssociationAddress" cols="30"></textarea></td>
+              </tr>
+              <tr>
+                <td width="191" align="right"><font color="#FF0000" size="2" face="Arial">*</font><font size="2" face="Arial">&nbsp;</font><font face="Arial" size="2">Your
+                  Name:&nbsp;&nbsp;</font></td>
+                <td width="258"><input type="text" name="YourName" size="30"></td>
+              </tr>
+              <tr>
+                <td width="191" align="right"><font face="Arial" size="2">Your
+                  E-mail Address:&nbsp;&nbsp;</font></td>
+                <td width="258"><input type="text" name="YourEmail" size="30"></td>
+              </tr>
+              <tr>
+                <td width="191" align="right"><font color="#FF0000" size="2" face="Arial">*</font><font size="2" face="Arial">&nbsp;</font><font face="Arial" size="2">Day
+                  Time Phone:&nbsp;&nbsp;</font></td>
+                <td width="258"><input type="text" name="DayPhone" size="30"></td>
+              </tr>
+              <tr>
+                <td width="191" align="right"><font color="#FF0000" size="2" face="Arial">*</font><font size="2" face="Arial">&nbsp;</font><font face="Arial" size="2">Description:&nbsp;&nbsp;</font></td>
+                <td width="258"><textarea rows="5" name="Description" cols="30"></textarea></td>
+              </tr>
+            <tr>
+                <td width="191" align="right"></td>
+                <td>
+                    <div class="g-recaptcha" data-sitekey="6LcDCqcUAAAAABNnf7kIe4LXoPpGoFZkvg3j-kt8"></div>
+                    <!--<div class="g-recaptcha" data-sitekey="6LfG7qYUAAAAAGyNFVn7KnqW4QKEyvRQqHQ4IiVp"></div>-->
+                </td>
+            </tr>
+              <tr>
+                <td width="191" align="right"></td>
+                <td width="258"></td>
+              </tr>
+            </table>
+          </div>
+          <p align="center"><input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"></p>
+          <input type="hidden" name="FROM" value="postmaster@spectrumprops.com"><input type="hidden" name="HEADER" value="Accounting Request Form"><input type="hidden" name="RETURN" value="http://www.spectrumprops.com/thanks.htm"><input type="hidden" name="TO" value="info@spectrumprops.com">
+        </form>
+						<p align="center"><img border="0" src="Images/divider.gif" width="250" height="10"><br>
+							<font face="Arial" size="2" color="#000080"><b>Spectrum Property
+        Services<br>
+        </b>1259 Callens Road, Suite A, Ventura, CA 93003<br>
+								Fax: 805.642.6161 </font><font face="Arial" size="2" color="#000080">Phone: 805.642.6160 Toll Free: 800.642.8333<br>
+								
+        E-mail: info@spectrumprops.com
+</font>
+	  </td>
+    </tr>
+    <tr>
+      <td width="141"></td>
+      <td width="455">
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;</p>
+        <p>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>
